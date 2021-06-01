@@ -25,19 +25,19 @@ public class BeanTest {
 
 
         Quote quote1 = new Quote();
-        quote1.id=1;
+        quote1. quote_id=1;
         quote1.content = "Every minute you're not coding, you're not a developer";
         quote1.setAuthor_id(2);
 
 
         Quote quote2 = new Quote();
-        quote2.id=2;
+        quote2.quote_id=2;
         quote2.content= "i have to do my makeup first";
-        quote2.setAuthor_id(1);
+        quote2.getAuthor_id();
 
 
         Quote quote3 = new Quote();
-        quote3.id=3;
+        quote3.quote_id=3;
         quote3.content = "Do what makes you happy";
         quote3.setAuthor_id(3);
 // ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),

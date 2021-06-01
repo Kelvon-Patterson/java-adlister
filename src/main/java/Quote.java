@@ -1,17 +1,17 @@
 import java.io.Serializable;
 
-public class Quote implements Serializable {
+public class Quote  implements Serializable {
 
-    public int id;
+    public int quote_id;
     public int author_id;
     public String content;
 
-    public int getId() {
-        return id;
+    public int getQuote_id() {
+        return quote_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setQuote_id(int quote_id) {
+        this.quote_id = quote_id;
     }
 
     public String getContent() {
@@ -27,6 +27,6 @@ public class Quote implements Serializable {
     }
 
     public void setAuthor_id(int author_id) {
-        this.author_id = author_id;
+        this.author_id = getAuthor_id();
     }
 }

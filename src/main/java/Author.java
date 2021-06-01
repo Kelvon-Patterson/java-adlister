@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class Author implements Serializable {
+public class Author extends Quote implements Serializable {
     public int id;
     public String author_first_name;
     public String author_last_name;
