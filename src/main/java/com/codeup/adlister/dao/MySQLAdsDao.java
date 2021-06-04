@@ -1,6 +1,7 @@
 package com.codeup.adlister.dao;
 
 import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.models.User;
 import com.mysql.cj.jdbc.Driver;
 
 
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySQLAdsDao implements Ads {
-    private Connection connection = null;
+    private Connection connection;
 
     public MySQLAdsDao(Config config) {
 
@@ -39,6 +40,13 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error retrieving all ads.", e);
         }
     }
+
+//    public User findByUsername(String username){
+//        String query = "SELECT * FROM users WHERE username=? limit 1";
+//        try{
+//            PreparedStatement stmt = connection.prepareStatement(query);
+//        }
+//    }
 
     @Override
     public Long insert(Ad ad) {
